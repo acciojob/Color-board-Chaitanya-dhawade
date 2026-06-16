@@ -6,11 +6,12 @@ for (let i = 0; i < 800; i++) {
     const square = document.createElement("div");
     square.classList.add("square");
 
-    // random color on hover using CSS variable trick
+    // hover effect
     square.addEventListener("mouseover", () => {
         square.style.backgroundColor = getRandomColor();
     });
 
+    // return to default after 1s
     square.addEventListener("mouseout", () => {
         setTimeout(() => {
             square.style.backgroundColor = "rgb(29, 29, 29)";
