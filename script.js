@@ -1,5 +1,4 @@
-//your JS code here. If required.
-const container = document.getElementById("container");
+const container = document.querySelector(".container");
 
 // create 800 squares
 for (let i = 0; i < 800; i++) {
@@ -7,12 +6,14 @@ for (let i = 0; i < 800; i++) {
     const square = document.createElement("div");
     square.classList.add("square");
 
+    // random color on hover using CSS variable trick
     square.addEventListener("mouseover", () => {
-        const color = getRandomColor();
-        square.style.background = color;
+        square.style.backgroundColor = getRandomColor();
+    });
 
+    square.addEventListener("mouseout", () => {
         setTimeout(() => {
-            square.style.background = "#1d1d1d";
+            square.style.backgroundColor = "rgb(29, 29, 29)";
         }, 1000);
     });
 

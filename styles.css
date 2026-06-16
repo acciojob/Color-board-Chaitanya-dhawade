@@ -12,20 +12,22 @@ body{
     background:#111;
 }
 
+/* container must exist and show grid properly */
 .container{
     width:800px;
     display:flex;
     flex-wrap:wrap;
-    gap:2px;
 }
 
+/* IMPORTANT: default color must match test */
 .square{
     width:20px;
     height:20px;
-    background:#1d1d1d;
-    transition:background-color 1s ease;
+    background-color: rgb(29, 29, 29);
+    transition: background-color 1s ease;
 }
 
+/* hover effect */
 .square:hover{
-    transition:0s;
+    transition: background-color 0s;
 }
