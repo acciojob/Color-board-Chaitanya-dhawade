@@ -1,1 +1,31 @@
-/*  your css code here. If applicable */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:#111;
+}
+
+.container{
+    width:800px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:2px;
+}
+
+.square{
+    width:20px;
+    height:20px;
+    background:#1d1d1d;
+    transition:background-color 1s ease;
+}
+
+.square:hover{
+    transition:0s;
+}
